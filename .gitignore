@@ -10,3 +10,8 @@ gen/**
 .gradle/
 build/
 bin/
+.imported_roles/
+.ec2_inventory/
+*.retry
+*.DS_Store
+target/
