@@ -1,4 +1,4 @@
-package factories;
+package operatingsystemsexample.factories;
 
 public class WindowsOperatingSysten extends OperatingSystem{
     public WindowsOperatingSysten(String version, String architecture) {

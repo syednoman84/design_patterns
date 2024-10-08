@@ -1,4 +1,4 @@
-package factories;
+package operatingsystemsexample.factories;
 
 public class LinuxOperatingSystem extends OperatingSystem{
 

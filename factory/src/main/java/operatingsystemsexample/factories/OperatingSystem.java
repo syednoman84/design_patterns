@@ -1,4 +1,4 @@
-package factories;
+package operatingsystemsexample.factories;
 
 public abstract class OperatingSystem {
     private String  version;

@@ -11,7 +11,9 @@ public class LoanClosureService {
     public LoanClosureService(SecureLoan secureLoan) {
         this.secureLoan = secureLoan;
     }
+
+    // this is a custom business logic whatever we want to do before calling the foreCloseLoan() method
     public void foreCloseLoan() {
-        secureLoan.foreCloseLoan();;
+        secureLoan.foreCloseLoan();
     }
 }

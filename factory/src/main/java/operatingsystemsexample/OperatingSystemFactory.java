@@ -1,6 +1,8 @@
-import factories.LinuxOperatingSystem;
-import factories.OperatingSystem;
-import factories.WindowsOperatingSysten;
+package operatingsystemsexample;
+
+import operatingsystemsexample.factories.LinuxOperatingSystem;
+import operatingsystemsexample.factories.OperatingSystem;
+import operatingsystemsexample.factories.WindowsOperatingSysten;
 
 /**
  * Factory : As name suggest it is factory where we can create objects.
@@ -30,8 +32,8 @@ public class OperatingSystemFactory {
 // One more advantage , tomorrow you planned to change OS here , you can simply change this and everything works as is.
 
 Example creation of object.
-OperatingSystem operatingSystem = OperatingSystemFactory.getInstance("WINDOWS" , "WIN7" ,"x64");
-OperatingSystem operatingSystem2 = OperatingSystemFactory.getInstance("LINUX" , "DEB" ,"x64");
+OperatingSystem operatingSystem = operatingsystemsexample.OperatingSystemFactory.getInstance("WINDOWS" , "WIN7" ,"x64");
+OperatingSystem operatingSystem2 = operatingsystemsexample.OperatingSystemFactory.getInstance("LINUX" , "DEB" ,"x64");
  */
     public static OperatingSystem getInstance(String type, String version, String architecture) {
         switch (type){
