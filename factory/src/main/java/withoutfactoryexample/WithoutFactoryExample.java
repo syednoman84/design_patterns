@@ -3,7 +3,7 @@ package withoutfactoryexample;
 import java.io.*;
 
 /*
-    What are the problems with the this design?
+    What are the problems with this design?
 
     Tight Coupling:
         The client class Client directly instantiates the concrete classes (TwoWheeler and FourWheeler) based on the input type provided
