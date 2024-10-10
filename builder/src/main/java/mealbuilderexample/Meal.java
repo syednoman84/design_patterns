@@ -1,6 +1,8 @@
+package mealbuilderexample;
+
 /**
  * If we go via GOF Definition "The intent of the Builder design pattern is to separate the construction of a complex object from its representation. By doing so, the same construction process can create different representations.:
- *  It means for this Meal class lets say we have different representation which VegMeal and NonVegMeal
+ *  It means for this mealbuilderexample.Meal class lets say we have different representation which VegMeal and NonVegMeal
  *  Also this helps when you want to create object step by step too.
  *  So to achieve GOF we have following components as part builder pattern.
  *  1. Product - Which we are building

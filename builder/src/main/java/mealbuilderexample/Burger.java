@@ -1,3 +1,5 @@
+package mealbuilderexample;
+
 /**
  * Most Common Way to implement builder pattern is to have Builder class as innner class because : - You might have seen at most of the places. -Joshua Bloch's Builder pattern
  * 1. We don't want to expose our constructor which eventually creates confusion at later stage.

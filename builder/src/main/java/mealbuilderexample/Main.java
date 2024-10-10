@@ -1,3 +1,5 @@
+package mealbuilderexample;
+
 /**
  * Builder pattern : It is creational design pattern used to create complex presentation of objects.
  * Let's say you have class which has initially 4 fields, so you decided to go with constructor then few more fields added
@@ -12,7 +14,7 @@
  * they won't call build method we won't create object.
  *
  * Builder pattern is also used when single class has different object representation  meaning let's say We are creating
- * Burger which can be Veg, non veg ... which can have extra cheese or less cheese, bread size medium , large.
+ * mealbuilderexample.Burger which can be Veg, non veg ... which can have extra cheese or less cheese, bread size medium , large.
  * As user, you will say only I need one extra cheese large veg burger.
  *
  * To do so you can also have different builders which eventually passes the argument which are required to create that object.

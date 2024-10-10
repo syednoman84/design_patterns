@@ -1,16 +1,18 @@
-public class NonVegMealBuilder extends MealBuilder{
+package mealbuilderexample;
+
+public class VegMealBuilder extends MealBuilder{
     private Meal meal;
-    public NonVegMealBuilder() {
+    public VegMealBuilder() {
         meal = new Meal();
     }
     @Override
     public void addBriyani() {
-        this.meal.setBriyani("Chicken");
+        this.meal.setBriyani("Veg");
     }
 
     @Override
     public void addBread() {
-        this.meal.setBread("Roti");
+        this.meal.setBread("Naan");
 
     }
 
@@ -22,7 +24,7 @@ public class NonVegMealBuilder extends MealBuilder{
 
     @Override
     public void addCurry() {
-        this.meal.setCurry("Non-Veg");
+        this.meal.setCurry("Veg");
     }
 
     @Override
