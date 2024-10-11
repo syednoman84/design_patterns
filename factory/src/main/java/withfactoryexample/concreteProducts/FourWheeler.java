@@ -1,4 +1,6 @@
-package withfactoryexample;
+package withfactoryexample.concreteProducts;
+
+import withfactoryexample.productInterface.Vehicle;
 
 public class FourWheeler extends Vehicle {
     public void printVehicle() {

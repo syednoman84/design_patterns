@@ -1,5 +1,7 @@
 package carbuilderexample.components;
 
+import carbuilderexample.cars.Car;
+
 /**
  * Just another feature of a car.
  */

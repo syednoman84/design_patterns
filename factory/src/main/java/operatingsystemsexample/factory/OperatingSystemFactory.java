@@ -1,8 +1,8 @@
-package operatingsystemsexample;
+package operatingsystemsexample.factory;
 
-import operatingsystemsexample.factories.LinuxOperatingSystem;
-import operatingsystemsexample.factories.OperatingSystem;
-import operatingsystemsexample.factories.WindowsOperatingSysten;
+import operatingsystemsexample.products.LinuxOperatingSystem;
+import operatingsystemsexample.abstractclass.OperatingSystem;
+import operatingsystemsexample.products.WindowsOperatingSysten;
 
 /**
  * Factory : As name suggest it is factory where we can create objects.
@@ -25,22 +25,22 @@ import operatingsystemsexample.factories.WindowsOperatingSysten;
  */
 public class OperatingSystemFactory {
 
-    private OperatingSystemFactory() {
+    public OperatingSystemFactory() {
 
     }
 /*
 // One more advantage , tomorrow you planned to change OS here , you can simply change this and everything works as is.
 
 Example creation of object.
-OperatingSystem operatingSystem = operatingsystemsexample.OperatingSystemFactory.getInstance("WINDOWS" , "WIN7" ,"x64");
-OperatingSystem operatingSystem2 = operatingsystemsexample.OperatingSystemFactory.getInstance("LINUX" , "DEB" ,"x64");
+OperatingSystem operatingSystem = operatingsystemsexample.factory.OperatingSystemFactory.getInstance("WINDOWS" , "WIN7" ,"x64");
+OperatingSystem operatingSystem2 = operatingsystemsexample.factory.OperatingSystemFactory.getInstance("LINUX" , "DEB" ,"x64");
  */
-    public static OperatingSystem getInstance(String type, String version, String architecture) {
+    public  OperatingSystem getOperatingSystem(String type, String version, String architecture) {
         switch (type){
             case "WINDOWS":
-                return new WindowsOperatingSysten(version,architecture);
+                return new WindowsOperatingSysten(type, version,architecture);
             case "LINUX":
-                return new LinuxOperatingSystem(version,architecture);
+                return new LinuxOperatingSystem(type, version,architecture);
             default:
                 throw new IllegalArgumentException("OS Not supported");
         }

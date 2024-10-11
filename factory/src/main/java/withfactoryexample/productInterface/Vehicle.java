@@ -1,4 +1,4 @@
-package withfactoryexample;
+package withfactoryexample.productInterface;
 
 // Product interface representing a vehicle
 public abstract class Vehicle {

@@ -1,7 +1,10 @@
-package withfactoryexample;
+package withfactoryexample.client;
+
+import withfactoryexample.creatorInterface.VehicleFactory;
+import withfactoryexample.productInterface.Vehicle;
 
 // Client class
-class Client {
+public class Client {
     private Vehicle pVehicle;
 
     public Client(VehicleFactory factory) {

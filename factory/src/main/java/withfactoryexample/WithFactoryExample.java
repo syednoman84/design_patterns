@@ -16,6 +16,12 @@ package withfactoryexample;
         without modifying existing client code.
 */
 
+import withfactoryexample.client.Client;
+import withfactoryexample.concreteCreators.FourWheelerFactory;
+import withfactoryexample.concreteCreators.TwoWheelerFactory;
+import withfactoryexample.creatorInterface.VehicleFactory;
+import withfactoryexample.productInterface.Vehicle;
+
 /*
     Components of Factory Method Design Pattern
 

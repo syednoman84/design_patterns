@@ -1,8 +1,17 @@
-package operatingsystemsexample.factories;
+package operatingsystemsexample.abstractclass;
 
 public abstract class OperatingSystem {
     private String  version;
     private String architecture;
+    private String type;
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 
     public String getVersion() {
         return version;
@@ -20,7 +29,8 @@ public abstract class OperatingSystem {
         this.architecture = architecture;
     }
 
-    public OperatingSystem(String version, String architecture) {
+    public OperatingSystem(String type, String version, String architecture) {
+        this.type = type;
         this.version = version;
         this.architecture = architecture;
     }
