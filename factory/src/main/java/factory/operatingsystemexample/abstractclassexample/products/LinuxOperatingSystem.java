@@ -1,6 +1,6 @@
 package factory.operatingsystemexample.abstractclassexample.products;
 
-import factory.operatingsystemexample.abstractclassexample.vehicleabstractclass.OperatingSystem;
+import factory.operatingsystemexample.abstractclassexample.osabstractclass.OperatingSystem;
 
 public class LinuxOperatingSystem extends OperatingSystem {
 

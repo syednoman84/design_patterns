@@ -1,6 +1,6 @@
 package factory.operatingsystemexample.interfaceexample.products;
 
-import factory.operatingsystemexample.interfaceexample.vehicleinterface.OperatingSystem;
+import factory.operatingsystemexample.interfaceexample.osinterface.OperatingSystem;
 
 public class WindowsOperatingSysten implements OperatingSystem {
 
@@ -15,7 +15,7 @@ public class WindowsOperatingSysten implements OperatingSystem {
     }
 
     @Override
-    public void buildVehicle() {
+    public void buildOperatingSystem() {
         System.out.println("Windows Operating System Built with: " + type + " " + version + " " + architecture);
     }
 

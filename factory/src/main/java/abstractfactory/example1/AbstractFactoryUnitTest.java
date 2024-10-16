@@ -7,33 +7,33 @@ import org.junit.jupiter.api.Test;
 class AbstractFactoryUnitTest {
     @Test
     public void givenFutureVehicleFactory_whenCreateMotorVehicle_thenInstanceOf() {
-        Corporation corporation = new FutureVehicleCorporation();
+        Corporation corporation = new CorporationA();
         MotorVehicle motorVehicle = corporation.createMotorVehicle();
         assertThat(motorVehicle).isInstanceOf(MotorVehicle.class);
-        assertThat(motorVehicle).isInstanceOf(FutureVehicleMotorcycle.class);
+        assertThat(motorVehicle).isInstanceOf(CorporationAMotorcycle.class);
     }
 
     @Test
     public void givenFutureVehicleFactory_whenCreateElectricVehicle_thenInstanceOf() {
-        Corporation corporation = new FutureVehicleCorporation();
+        Corporation corporation = new CorporationA();
         ElectricVehicle electricVehicle = corporation.createElectricVehicle();
         assertThat(electricVehicle).isInstanceOf(ElectricVehicle.class);
-        assertThat(electricVehicle).isInstanceOf(FutureVehicleElectricCar.class);
+        assertThat(electricVehicle).isInstanceOf(CorporationAElectricCar.class);
     }
 
     @Test
     public void givenNextGenFactory_whenCreateMotorVehicle_thenInstanceOf() {
-        Corporation corporation = new NextGenCorporation();
+        Corporation corporation = new CorporationB();
         MotorVehicle motorVehicle = corporation.createMotorVehicle();
         assertThat(motorVehicle).isInstanceOf(MotorVehicle.class);
-        assertThat(motorVehicle).isInstanceOf(NextGenMotorcycle.class);
+        assertThat(motorVehicle).isInstanceOf(CorporationBMotorcycle.class);
     }
 
     @Test
     public void givenNextGenFactory_whenCreateElectricVehicle_thenInstanceOf() {
-        Corporation corporation = new NextGenCorporation();
+        Corporation corporation = new CorporationB();
         ElectricVehicle electricVehicle = corporation.createElectricVehicle();
         assertThat(electricVehicle).isInstanceOf(ElectricVehicle.class);
-        assertThat(electricVehicle).isInstanceOf(NextGenElectricCar.class);
+        assertThat(electricVehicle).isInstanceOf(CorporationBElectricCar.class);
     }
 }

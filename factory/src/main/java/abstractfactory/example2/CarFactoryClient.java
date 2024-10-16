@@ -49,7 +49,8 @@ package abstractfactory.example2;
     -   The other main challenge is to ensure consistency in the production of cars and their specifications
         within each region.
     -   Adapting the system to changes in regulations or introducing new features for a specific region
-        becomes challenging. Modifications would need to be made in multiple places, increasing the chances of introducing bugs and making the system more prone to errors.
+        becomes challenging. Modifications would need to be made in multiple places,
+        increasing the chances of introducing bugs and making the system more prone to errors.
 
     How Abstract Factory Pattern help to solve above challenges?
 
@@ -75,7 +76,6 @@ public class CarFactoryClient {
         CarFactory northAmericaFactory = new NorthAmericaCarFactory();
         Car northAmericaCar = northAmericaFactory.createCar();
         CarSpecification northAmericaSpec = northAmericaFactory.createSpecification();
-
         northAmericaCar.assemble();
         northAmericaSpec.display();
 
@@ -83,7 +83,6 @@ public class CarFactoryClient {
         CarFactory europeFactory = new EuropeCarFactory();
         Car europeCar = europeFactory.createCar();
         CarSpecification europeSpec = europeFactory.createSpecification();
-
         europeCar.assemble();
         europeSpec.display();
     }

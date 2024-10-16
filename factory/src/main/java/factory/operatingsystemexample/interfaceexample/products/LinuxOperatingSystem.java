@@ -1,6 +1,6 @@
 package factory.operatingsystemexample.interfaceexample.products;
 
-import factory.operatingsystemexample.interfaceexample.vehicleinterface.OperatingSystem;
+import factory.operatingsystemexample.interfaceexample.osinterface.OperatingSystem;
 
 public class LinuxOperatingSystem implements OperatingSystem {
 
@@ -15,7 +15,7 @@ public class LinuxOperatingSystem implements OperatingSystem {
     }
 
     @Override
-    public void buildVehicle() {
+    public void buildOperatingSystem() {
         System.out.println("Linux Operating System Built with: " + type + " " + version + " " + architecture);
     }
 

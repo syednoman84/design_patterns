@@ -1,6 +1,6 @@
 package factory.operatingsystemexample;
 
-import factory.operatingsystemexample.abstractclassexample.vehicleabstractclass.OperatingSystem;
+import factory.operatingsystemexample.abstractclassexample.osabstractclass.OperatingSystem;
 import factory.operatingsystemexample.abstractclassexample.factory.OperatingSystemFactory;
 
 public class Driver {
@@ -19,13 +19,13 @@ public class Driver {
         System.out.println(linOS.getArchitecture());
 
         factory.operatingsystemexample.interfaceexample.factory.OperatingSystemFactory osf1 = new factory.operatingsystemexample.interfaceexample.factory.OperatingSystemFactory();
-        factory.operatingsystemexample.interfaceexample.vehicleinterface.OperatingSystem winOS1 = osf1.getOperatingSystem("WINDOWS" , "WIN9" ,"x664");
+        factory.operatingsystemexample.interfaceexample.osinterface.OperatingSystem winOS1 = osf1.getOperatingSystem("WINDOWS" , "WIN9" ,"x664");
         System.out.println("Third OS:");
-        winOS1.buildVehicle();
+        winOS1.buildOperatingSystem();
 
-        factory.operatingsystemexample.interfaceexample.vehicleinterface.OperatingSystem linOS2 = osf1.getOperatingSystem("LINUX" , "TEMP" ,"ARM2");
+        factory.operatingsystemexample.interfaceexample.osinterface.OperatingSystem linOS2 = osf1.getOperatingSystem("LINUX" , "TEMP" ,"ARM2");
         System.out.println("Fourth OS:");
-        linOS2.buildVehicle();
+        linOS2.buildOperatingSystem();
     }
 
 }

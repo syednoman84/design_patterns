@@ -1,7 +1,7 @@
 package factory.operatingsystemexample.abstractclassexample.factory;
 
 import factory.operatingsystemexample.abstractclassexample.products.LinuxOperatingSystem;
-import factory.operatingsystemexample.abstractclassexample.vehicleabstractclass.OperatingSystem;
+import factory.operatingsystemexample.abstractclassexample.osabstractclass.OperatingSystem;
 import factory.operatingsystemexample.abstractclassexample.products.WindowsOperatingSysten;
 
 /**

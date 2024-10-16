@@ -1,6 +1,6 @@
 package abstractfactory.example1;
 
-public class NextGenMotorcycle implements MotorVehicle {
+public class CorporationBMotorcycle implements MotorVehicle {
     @Override
     public void build() {
         System.out.println("NextGen Motorcycle");

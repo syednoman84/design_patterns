@@ -1,4 +1,4 @@
-package factory.operatingsystemexample.abstractclassexample.vehicleabstractclass;
+package factory.operatingsystemexample.abstractclassexample.osabstractclass;
 
 public abstract class OperatingSystem {
     private String  version;

@@ -1,6 +1,6 @@
 package factory.operatingsystemexample.interfaceexample.factory;
 
-import factory.operatingsystemexample.interfaceexample.vehicleinterface.OperatingSystem;
+import factory.operatingsystemexample.interfaceexample.osinterface.OperatingSystem;
 import factory.operatingsystemexample.interfaceexample.products.LinuxOperatingSystem;
 import factory.operatingsystemexample.interfaceexample.products.WindowsOperatingSysten;
 

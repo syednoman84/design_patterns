@@ -1,13 +1,13 @@
 package abstractfactory.example1;
 
-public class NextGenCorporation extends Corporation {
+public class CorporationA extends Corporation {
     @Override
     public MotorVehicle createMotorVehicle() {
-        return new NextGenMotorcycle();
+        return new CorporationAMotorcycle();
     }
 
     @Override
     public ElectricVehicle createElectricVehicle() {
-        return new NextGenElectricCar();
+        return new CorporationAElectricCar();
     }
 }
