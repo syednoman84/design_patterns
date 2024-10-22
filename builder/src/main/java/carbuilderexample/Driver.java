@@ -27,9 +27,6 @@ import carbuilderexample.director.Director;
 public class Driver {
 
     public static void main(String[] args) {
-        final int TEMP;
-        if(true){ TEMP=5;} else TEMP=6;
-        System.out.println(TEMP);
         Director director = new Director();
 
         // Director gets the concrete builder object from the client
@@ -51,6 +48,12 @@ public class Driver {
         director.constructSportsCar(manualBuilder);
         Manual carManual = manualBuilder.getResult();
         System.out.println("\nCar manual built:\n" + carManual.print());
+
+        CarBuilder suvCarBuilder = new CarBuilder();
+        director.constructSUV(suvCarBuilder);
+        Car suvCar = suvCarBuilder.getResult();
+        System.out.println("SUV Built:\n" + suvCar.getCarType());
+
     }
 
 }
