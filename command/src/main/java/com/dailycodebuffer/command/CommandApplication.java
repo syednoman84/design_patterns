@@ -1,6 +1,6 @@
 package com.dailycodebuffer.command;
 
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+//import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Command is a behavioral design pattern that turns a request into a stand-alone object that contains all
@@ -11,9 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 			  https://www.baeldung.com/java-command-pattern
  */
 
-@SpringBootApplication
+//@SpringBootApplication
 public class CommandApplication {
-
 	public static void main(String[] args) {
 		TextFileOperationExecutor textFileOperationExecutor
 				= new TextFileOperationExecutor();
