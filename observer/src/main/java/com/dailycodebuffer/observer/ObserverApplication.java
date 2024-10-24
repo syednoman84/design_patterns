@@ -1,3 +1,4 @@
+/*
 package com.dailycodebuffer.observer;
 
 import org.springframework.boot.SpringApplication;
@@ -16,3 +17,4 @@ public class ObserverApplication {
 	}
 
 }
+*/
