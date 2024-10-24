@@ -5,7 +5,9 @@ import weatherapp.concreteobserver.TVDisplay;
 import weatherapp.concretesubject.WeatherStation;
 import weatherapp.observer.Observer;
 
-
+/*
+    Source: https://www.geeksforgeeks.org/observer-pattern-set-1-introduction/
+*/
 public class Driver {
     public static void main(String[] args) {
         WeatherStation weatherStation = new WeatherStation();
