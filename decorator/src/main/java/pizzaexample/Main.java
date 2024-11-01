@@ -1,4 +1,4 @@
-import java.util.Collections;
+package pizzaexample;
 
 /**
  * Decorator - It is a design pattern categorized in structural pattern. It helps to decorate the object meaning

@@ -1,6 +1,8 @@
+package pizzaexample;
+
 public class BasePizza implements Pizza{
     @Override
     public String bake() {
-        return "Base Pizza";
+        return "Base pizzaexample.Pizza";
     }
 }
