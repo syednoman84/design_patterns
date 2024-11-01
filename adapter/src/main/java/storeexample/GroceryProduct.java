@@ -1,6 +1,8 @@
-public class FoodItem implements Item{
+package storeexample;
+
+public class GroceryProduct implements GroceryItem {
     @Override
-    public String getItemName() {
+    public String getName() {
         return null;
     }
 
@@ -10,7 +12,7 @@ public class FoodItem implements Item{
     }
 
     @Override
-    public String getRestaurantName() {
+    public String getStoreName() {
         return null;
     }
 }

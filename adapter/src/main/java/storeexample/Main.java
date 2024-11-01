@@ -1,3 +1,5 @@
+package storeexample;
+
 /**
  * Adapter patterns comes under structural pattern as it deals with how classes are interacting.
  * As name suggests adapter pattern is used adapt two different incompatible system.

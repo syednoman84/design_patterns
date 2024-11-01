@@ -1,3 +1,5 @@
+package storeexample;
+
 /**
  * This is the example of object level adater because we are adapting groceryItem using
  * instance of that particular class.

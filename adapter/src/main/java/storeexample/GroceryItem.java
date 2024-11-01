@@ -1,3 +1,5 @@
+package storeexample;
+
 public interface GroceryItem {
     String getName();
     String getPrice();
